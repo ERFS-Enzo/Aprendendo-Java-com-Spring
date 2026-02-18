@@ -1,7 +1,6 @@
-package dio.spring;
+package dio.spring.repository;
 
 import dio.spring.model.User;
-import dio.spring.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -18,6 +17,7 @@ public class StartApp implements CommandLineRunner {
         for(User u: users){
             System.out.println(u);
         }
+        System.out.println("FUNCIONANDO");
     }
     private void insertUser(){
         User user = new User();
